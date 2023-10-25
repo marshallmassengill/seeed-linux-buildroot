@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-EXIM_VERSION = 4.96
+EXIM_VERSION = 4.96.2
 EXIM_SOURCE = exim-$(EXIM_VERSION).tar.xz
 EXIM_SITE = https://ftp.exim.org/pub/exim/exim4
 EXIM_LICENSE = GPL-2.0+
@@ -13,6 +13,12 @@ EXIM_CPE_ID_VENDOR = exim
 EXIM_SELINUX_MODULES = exim mta
 EXIM_DEPENDENCIES = host-berkeleydb host-pcre2 pcre2 berkeleydb host-pkgconf
 
+# 0006-Fix-regex-n-use-after-free.-Bug-2915.patch
+EXIM_IGNORE_CVES += CVE-2022-3559
+
+# built without dmarc support
+EXIM_IGNORE_CVES += CVE-2022-3620
+
 # Modify a variable value. It must already exist in the file, either
 # commented or not.
 define exim-config-change # variable-name, variable-value
@@ -20,7 +26,7 @@ define exim-config-change # variable-name, variable-value
 		$(@D)/Local/Makefile
 endef
 
-# Comment-out a variable. Has no effect if it does not exits.
+# Comment-out a variable. Has no effect if it does not exist.
 define exim-config-unset # variable-name
 	$(SED) 's,^\([[:space:]]*$1[[:space:]]*=.*$$\),# \1,' \
 		$(@D)/Local/Makefile

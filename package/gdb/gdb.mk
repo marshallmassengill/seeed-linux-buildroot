@@ -32,7 +32,7 @@ GDB_PRE_CONFIGURE_HOOKS += GDB_CONFIGURE_SYMLINK
 # also need ncurses.
 # As for libiberty, gdb may use a system-installed one if present, so
 # we must ensure ours is installed first.
-HOST_GDB_DEPENDENCIES = host-expat host-libiberty host-ncurses
+HOST_GDB_DEPENDENCIES = host-expat host-libiberty host-ncurses host-zlib
 
 # Disable building documentation
 GDB_MAKE_OPTS += MAKEINFO=true
@@ -58,7 +58,7 @@ endif
 
 # All newer versions of GDB need host-gmp, so it's only for older
 # versions that the dependency can be avoided.
-ifeq ($(BR2_GDB_VERSION_10)$(BR2_arc),)
+ifeq ($(BR2_arc),)
 HOST_GDB_DEPENDENCIES += host-gmp
 endif
 
@@ -132,24 +132,33 @@ GDB_CONF_OPTS = \
 	--without-included-gettext \
 	--disable-werror \
 	--enable-static \
-	--without-mpfr
+	--without-mpfr \
+	--disable-source-highlight
 
 ifeq ($(BR2_PACKAGE_GDB_DEBUGGER),y)
+GDB_DEPENDENCIES += zlib
 GDB_CONF_OPTS += \
 	--enable-gdb \
-	--with-curses
+	--with-curses \
+	--with-system-zlib
 GDB_DEPENDENCIES += ncurses \
 	$(if $(BR2_PACKAGE_LIBICONV),libiconv)
 else
+# When only building gdbserver, we don't need zlib. But we have no way to
+# tell the top-level configure that we don't need zlib: it either wants to
+# build the bundled one, or use the system one.
+# Since we're going to only install the gdbserver to the target, we don't
+# care that the bundled zlib is built, as it is not used.
 GDB_CONF_OPTS += \
 	--disable-gdb \
-	--without-curses
+	--without-curses \
+	--without-system-zlib
 endif
 
 # Starting from GDB 11.x, gmp is needed as a dependency to build full
-# gdb. So we avoid the dependency only for GDB 10.x and the special
-# version used on ARC.
-ifeq ($(BR2_GDB_VERSION_10)$(BR2_arc):$(BR2_PACKAGE_GDB_DEBUGGER),:y)
+# gdb. So we avoid the dependency only for the special version used on
+# ARC.
+ifeq ($(BR2_arc):$(BR2_PACKAGE_GDB_DEBUGGER),:y)
 GDB_CONF_OPTS += \
 	--with-libgmp-prefix=$(STAGING_DIR)/usr
 GDB_DEPENDENCIES += gmp
@@ -212,13 +221,6 @@ else
 GDB_CONF_OPTS += --without-lzma
 endif
 
-ifeq ($(BR2_PACKAGE_ZLIB),y)
-GDB_CONF_OPTS += --with-zlib
-GDB_DEPENDENCIES += zlib
-else
-GDB_CONF_OPTS += --without-zlib
-endif
-
 ifeq ($(BR2_PACKAGE_GDB_PYTHON),)
 # This removes some unneeded Python scripts and XML target description
 # files that are not useful for a normal usage of the debugger.
@@ -256,8 +258,10 @@ HOST_GDB_CONF_OPTS = \
 	--enable-threads \
 	--disable-werror \
 	--without-included-gettext \
+	--with-system-zlib \
 	--with-curses \
 	--without-mpfr \
+	--disable-source-highlight \
 	$(GDB_DISABLE_BINUTILS_CONF_OPTS)
 
 ifeq ($(BR2_PACKAGE_HOST_GDB_TUI),y)

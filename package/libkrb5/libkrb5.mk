@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-LIBKRB5_VERSION = 1.20
+LIBKRB5_VERSION = 1.21
 LIBKRB5_SITE = https://web.mit.edu/kerberos/dist/krb5/$(LIBKRB5_VERSION)
 LIBKRB5_SOURCE = krb5-$(LIBKRB5_VERSION).tar.gz
 LIBKRB5_SUBDIR = src
