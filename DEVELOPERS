@@ -72,6 +72,7 @@ F:	package/libqmi/
 F:	package/modem-manager/
 
 N:	Alex Michel <alex.michel@wiedemann-group.com>
+F:	package/libzenoh-pico/
 F:	package/network-manager-openvpn/
 
 N:	Alex Suykov <alex.suykov@gmail.com>
@@ -665,6 +666,7 @@ F:	board/beelink/gs1/
 F:	configs/beelink_gs1_defconfig
 
 N:	Colin Foster <colin.foster@in-advantage.com>
+F:	package/python-tftpy/
 F:	package/rauc-hawkbit-updater/
 
 N:	Corentin Guillevic <corentin.guillevic@smile.fr>
@@ -2007,6 +2009,7 @@ F:	support/testing/tests/package/test_python_pytest.py
 F:	support/testing/tests/package/test_python_pytest_asyncio.py
 
 N:	Marcus Folkesson <marcus.folkesson@gmail.com>
+F:	package/criu/
 F:	package/libcamera/
 F:	package/libcamera-apps/
 F:	package/libostree/
@@ -3169,6 +3172,7 @@ F:	package/zisofs-tools/
 F:	support/download/
 
 N:	Yann E. MORIN <yann.morin@orange.com>
+F:	.editorconfig
 F:	package/gpsd/
 
 N:	Yegor Yefremov <yegorslists@googlemail.com>
