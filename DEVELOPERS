@@ -71,6 +71,9 @@ F:	package/libmbim/
 F:	package/libqmi/
 F:	package/modem-manager/
 
+N:      Alessandro Partesotti <a.partesotti@gmail.com>
+F:      package/oatpp/
+
 N:	Alex Michel <alex.michel@wiedemann-group.com>
 F:	package/libzenoh-pico/
 F:	package/network-manager-openvpn/
@@ -525,6 +528,7 @@ F:	package/ncdu/
 N:	Brandon Maier <brandon.maier@collins.com>
 F:	board/freescale/ls1046a-frwy/
 F:	configs/ls1046a-frwy_defconfig
+F:	package/python-pysensors/
 F:	package/qoriq-fm-ucode/
 F:	package/unifdef/
 F:	package/vmtouch/
@@ -1089,7 +1093,9 @@ N:	Francisco Gonzalez <gzmorell@gmail.com>
 F:	package/ser2net/
 
 N:	Francois Dugast <francois.dugast.foss@gmail.com>
+F:	board/sipeed/licheepi_nano/
 F:	board/visionfive2/
+F:	configs/sipeed_licheepi_nano_defconfig
 F:	configs/visionfive2_defconfig
 
 N:	Francois Perrad <francois.perrad@gadz.org>
@@ -2632,6 +2638,10 @@ F:	package/agent-proxy/
 N:	Ryan Wilkins <ryan@deadfrog.net>
 F:	package/biosdevname/
 
+N:	Saeed Kazemi <kazemi.ms@gmail.com>
+F:	package/eza/
+F:	package/procs/
+
 N:	Sam Lancia <sam@gpsm.co.uk>
 F:	package/lrzip/
 
@@ -2828,6 +2838,10 @@ F:	package/open-isns/
 F:	package/reproc/
 F:	package/termcolor/
 F:	package/tl-expected/
+
+N:	Takumi Takahashi <takumiiinn@gmail.com>
+F:	package/gsettings-desktop-schemas/
+F:	package/libcanberra/
 
 N:	Tan En De <ende.tan@starfivetech.com>
 F:	package/libkcapi/
