@@ -592,7 +592,6 @@ package/irrlicht/0001-override-CPPFLAGS-CXXFLAGS-and-CFLAGS-in-Makefile.patch Up
 package/irrlicht/0002-makefile-override-LDFLAGS-and-remove-obsolete-X11R6-.patch Upstream
 package/iucode-tool/S00iucode-tool Variables
 package/iwd/S40iwd Shellcheck Variables
-package/jack2/0001-Remove-usage-of-U-mode-bit-for-opening-files-in-pyth.patch Upstream
 package/janus-gateway/0001-disable-ssp.patch Upstream
 package/janus-gateway/0002-Add-test-for-Wunused-but-set-variable.patch Upstream
 package/jose/0001-lib-hsh.c-rename-hsh-local-variable.patch Upstream
@@ -1332,8 +1331,6 @@ package/taskd/0002-Use-correct-variables-for-GnuTLS-detection.patch Upstream
 package/taskd/0003-CMakeLists-use-pkg-config-uuid-detection.patch Upstream
 package/tcf-agent/S55tcf-agent Shellcheck Variables
 package/tcl/0001-Disable-tcl-compatibility-layers.patch Upstream
-package/tesseract-ocr/0001-Check-if-platform-supports-feenableexcept.patch Upstream
-package/tesseract-ocr/0002-configure.ac-fix-build-on-aarch64_be.patch Upstream
 package/tftpd/0001-Use-extern-qualifier-to-fix-gcc-10.x-build.patch Upstream
 package/tftpd/S80tftpd-hpa Indent Shellcheck Variables
 package/ti-gfx/0001-newclkapi.patch Upstream
