@@ -74,8 +74,8 @@ F:	package/libmbim/
 F:	package/libqmi/
 F:	package/modem-manager/
 
-N:      Alessandro Partesotti <a.partesotti@gmail.com>
-F:      package/oatpp/
+N:	Alessandro Partesotti <a.partesotti@gmail.com>
+F:	package/oatpp/
 
 N:	Alex Michel <alex.michel@wiedemann-group.com>
 F:	package/libzenoh-pico/
@@ -2210,6 +2210,7 @@ F:	board/zynqmp/
 F:	configs/versal_vck190_defconfig
 F:	configs/zynq_zc702_defconfig
 F:	configs/zynq_zc706_defconfig
+F:	configs/zynqmp_kria_kd240_defconfig
 F:	configs/zynqmp_kria_kr260_defconfig
 F:	configs/zynqmp_kria_kv260_defconfig
 F:	configs/zynqmp_zcu102_defconfig
