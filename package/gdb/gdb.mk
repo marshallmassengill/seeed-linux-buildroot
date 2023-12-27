@@ -121,8 +121,10 @@ GDB_MAKE_ENV += \
 GDB_CONF_ENV += gdb_cv_prfpregset_t_broken=no
 GDB_MAKE_ENV += gdb_cv_prfpregset_t_broken=no
 
-# The shared only build is not supported by gdb, so enable static build for
-# build-in libraries with --enable-static.
+# We want the built-in libraries of gdb (libbfd, libopcodes) to be
+# built and linked statically, as we do not install them on the
+# target, to not clash with the ones potentially installed by
+# binutils. This is why we pass --enable-static --disable-shared.
 GDB_CONF_OPTS = \
 	--without-uiout \
 	--disable-gdbtk \
@@ -132,7 +134,7 @@ GDB_CONF_OPTS = \
 	--without-included-gettext \
 	--disable-werror \
 	--enable-static \
-	--without-mpfr \
+	--disable-shared \
 	--disable-source-highlight
 
 ifeq ($(BR2_PACKAGE_GDB_DEBUGGER),y)
@@ -162,6 +164,15 @@ ifeq ($(BR2_arc):$(BR2_PACKAGE_GDB_DEBUGGER),:y)
 GDB_CONF_OPTS += \
 	--with-libgmp-prefix=$(STAGING_DIR)/usr
 GDB_DEPENDENCIES += gmp
+endif
+
+# Starting from GDB 14.x, mpfr is needed as a dependency to build full
+# gdb.
+ifeq ($(BR2_GDB_VERSION_14)$(BR2_PACKAGE_GDB_DEBUGGER),yy)
+GDB_DEPENDENCIES += mpfr
+GDB_CONF_OPTS += --with-mpfr=$(STAGING_DIR)
+else
+GDB_CONF_OPTS += --without-mpfr
 endif
 
 ifeq ($(BR2_PACKAGE_GDB_SERVER),y)
@@ -248,10 +259,14 @@ endif
 # A few notes:
 #  * --target, because we're doing a cross build rather than a real
 #    host build.
-#  * --enable-static because gdb really wants to use libbfd.a
+#  * --enable-static --disable-shared because we want host gdb to
+#    build and link against a static version of libbfd and
+#    libopcodes, because we don't install the shared variants of
+#    those libraries in $(HOST_DIR), as it might clash with binutils
 HOST_GDB_CONF_OPTS = \
 	--target=$(GNU_TARGET_NAME) \
 	--enable-static \
+	--disable-shared \
 	--without-uiout \
 	--disable-gdbtk \
 	--without-x \
@@ -260,9 +275,16 @@ HOST_GDB_CONF_OPTS = \
 	--without-included-gettext \
 	--with-system-zlib \
 	--with-curses \
-	--without-mpfr \
 	--disable-source-highlight \
 	$(GDB_DISABLE_BINUTILS_CONF_OPTS)
+
+# GDB newer than 14.x need host-mpfr
+ifeq ($(BR2_GDB_VERSION_14),y)
+HOST_GDB_DEPENDENCIES += host-mpfr
+HOST_GDB_CONF_OPTS += --with-mpfr=$(HOST_DIR)
+else
+HOST_GDB_CONF_OPTS += --without-mpfr
+endif
 
 ifeq ($(BR2_PACKAGE_HOST_GDB_TUI),y)
 HOST_GDB_CONF_OPTS += --enable-tui
