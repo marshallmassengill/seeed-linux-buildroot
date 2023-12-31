@@ -163,7 +163,6 @@ package/asterisk/0005-configure-fix-detection-of-re-entrant-resolver-funct.patch
 package/asterisk/0006-main-iostream.c-fix-build-with-libressl.patch Upstream
 package/at/0001-Makefile.in-fix-make-install-for-non-root-don-t-stri.patch Upstream
 package/at/S99at Indent Variables
-package/atest/0001-seq.h-fix-build-with-gcc-10.patch Upstream
 package/attr/0001-build-with-older-GCCs.patch Upstream
 package/audit/S02auditd Shellcheck Variables
 package/aufs-util/0001-remove-user-settings.patch Upstream
@@ -238,7 +237,6 @@ package/cairo/0002-ft-Use-FT_Done_MM_Var-instead-of-free-when-available-in-cairo
 package/cairo/0003-_arc_max_angle_for_tolerance_normalized-fix-infinite.patch Upstream
 package/cairo/0004-Fix-mask-usage-in-image-compositor.patch Upstream
 package/caps/0001-Fix-stdint-types-with-musl.patch Upstream
-package/catatonit/0002-fix-build-with-kernel-5.9.patch Upstream
 package/cdrkit/0001-no-rcmd.patch Upstream
 package/cdrkit/0002-define-__THROW-to-avoid-build-issue-with-musl.patch Upstream
 package/cdrkit/0003-Add-extern-to-char-outfile-declaration-to-fix-build-.patch Upstream
@@ -1063,7 +1061,6 @@ package/pigpio/S50pigpio Shellcheck Variables
 package/pistache/0001-src-common-transport.cc-fallback-value-for-RUSAGE_TH.patch Upstream
 package/pistache/0002-src-server-listener.cc-fix-libressl-build.patch Upstream
 package/pixman/0001-Disable-tests.patch Upstream
-package/pkcs11-helper/0001-openssl-libressl-3-5-0-does-not-have-DSA_meth_set1_name.patch Upstream
 package/pkgconf/0001-Only-prefix-with-the-sysroot-a-subset-of-variables.patch Upstream
 package/pkgconf/0002-Revert-main-assume-modversion-insted-of-version-if-o.patch Upstream
 package/pkgconf/pkg-config.in Shellcheck
@@ -1210,8 +1207,6 @@ package/rpi-userland/0006-interface-vcos-pthreads-CMakeLists.txt-fix-build-wit.p
 package/rpi-userland/0007-GLES2-gl2ext.h-add-GLint64-GLuint64-and-GLsync-typed.patch Upstream
 package/rt-tests/0001-Fix-a-build-issue-with-uClibc-ng.patch Upstream
 package/rt-tests/0002-Makefile-drop-explicit-undefine-PYLIB-for-compatibil.patch Upstream
-package/rtl_433/0001-CMakeLists.txt-use-pkg-config-to-detect-openssl-when.patch Upstream
-package/rtl_433/0002-minor-Fix-mongoose-build-without-threads.patch Upstream
 package/rtmpdump/0001-include-limits.h.patch Upstream
 package/rtorrent/0001-Added--disable-execinfo-option-to-configure.patch Upstream
 package/rtty/0001-CMakeLists.txt-prefer-pkg_check_modules.patch Upstream
@@ -1258,7 +1253,6 @@ package/shadowsocks-libev/0002-fix-maybe-uninitialized-errors.patch Upstream
 package/shadowsocks-libev/0003-lib-Makefile.am-remove-static-from-LDFLAGS.patch Upstream
 package/shairport-sync/0001-configure.ac-find-sndfile-through-pkg-config.patch Upstream
 package/shairport-sync/S99shairport-sync Indent Shellcheck Variables
-package/shapelib/0001-Remove-double-free-in-contrib-shpsrt.patch Upstream
 package/shared-mime-info/0001-Remove-incorrect-dependency-from-install-data-hook.patch Upstream
 package/shellinabox/0001-Makefile-disable-always-building-statically.patch Upstream
 package/shellinabox/0002-CVE-2018-16789-fix-for-broken-multipart-form-data.patch Upstream
