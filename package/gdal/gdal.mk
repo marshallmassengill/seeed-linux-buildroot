@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-GDAL_VERSION = 3.6.2
+GDAL_VERSION = 3.8.2
 GDAL_SITE = https://download.osgeo.org/gdal/$(GDAL_VERSION)
 GDAL_SOURCE = gdal-$(GDAL_VERSION).tar.xz
 GDAL_LICENSE = Apache-2.0, ISC, MIT, many others
@@ -20,16 +20,28 @@ GDAL_SUPPORTS_IN_SOURCE_BUILD = NO
 # enabled but it seems, in contrast to mrf driver support, that they
 # can be implicitly disabled, by configuring gdal without their
 # respectively needed dependencies.
-GDAL_DEPENDENCIES = host-pkgconf jpeg json-c libgeotiff libpng proj tiff zlib
+GDAL_DEPENDENCIES = \
+	giflib \
+	host-pkgconf \
+	jpeg \
+	json-c \
+	libgeotiff \
+	libpng \
+	proj \
+	qhull \
+	tiff \
+	zlib
 
 # Yes, even though they have -DDGDAL_USE options, a few libraries are
 # mandatory. If we don't provide them, bundled versions are used.
 GDAL_CONF_OPTS = \
 	-DGDAL_USE_GEOTIFF=ON \
+	-DGDAL_USE_GIF=ON \
 	-DGDAL_USE_JPEG=ON \
 	-DGDAL_USE_JSONC=ON \
 	-DGDAL_USE_ZLIB=ON \
 	-DGDAL_USE_PNG=ON \
+	-DGDAL_USE_QHULL=ON \
 	-DGDAL_USE_ARMADILLO=OFF \
 	-DGDAL_USE_BLOSC=OFF \
 	-DGDAL_USE_BRUNSLI=OFF \
@@ -39,7 +51,6 @@ GDAL_CONF_OPTS = \
 	-DGDAL_USE_CRNLIB=OFF \
 	-DGDAL_USE_CURL=OFF \
 	-DGDAL_USE_ECW=OFF \
-	-DGDAL_USE_EXPAT=OFF \
 	-DGDAL_USE_FILEGDB=OFF \
 	-DGDAL_USE_FREEXL=OFF \
 	-DGDAL_USE_GEOS=OFF \
@@ -57,7 +68,6 @@ GDAL_CONF_OPTS = \
 	-DGDAL_USE_KDU=OFF \
 	-DGDAL_USE_KEA=OFF \
 	-DGDAL_USE_LERC=OFF \
-	-DGDAL_USE_GIF=OFF \
 	-DGDAL_USE_LIBLZMA=OFF \
 	-DGDAL_USE_DEFLATE=OFF \
 	-DGDAL_USE_MONGOCXX=OFF \
@@ -76,8 +86,6 @@ GDAL_CONF_OPTS = \
 	-DGDAL_USE_PDFIUM=OFF \
 	-DGDAL_USE_PODOFO=OFF \
 	-DGDAL_USE_POPPLER=OFF \
-	-DGDAL_USE_QHULL=OFF \
-	-DGDAL_USE_RASDAMAN=OFF \
 	-DGDAL_USE_RASTERLITE2=OFF \
 	-DGDAL_USE_RDB=OFF \
 	-DGDAL_USE_SFCGAL=OFF \
@@ -97,6 +105,13 @@ GDAL_CONF_OPTS = \
 	-DENABLE_PAM=OFF \
 	-DBUILD_JAVA_BINDINGS=OFF \
 	-DBUILD_PYTHON_BINDINGS=OFF
+
+ifeq ($(BR2_PACKAGE_EXPAT),y)
+GDAL_DEPENDENCIES += expat
+GDAL_CONF_OPTS += -DGDAL_USE_EXPAT=ON
+else
+GDAL_CONF_OPTS += -DGDAL_USE_EXPAT=OFF
+endif
 
 ifeq ($(BR2_PACKAGE_LIBXML2),y)
 GDAL_DEPENDENCIES += libxml2

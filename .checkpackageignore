@@ -455,7 +455,6 @@ package/gcc/arc-2020.09-release/0001-arc-Refurbish-adc-sbc-patterns.patch Upstre
 package/gcc/arc-2020.09-release/0002-libsanitizer-Remove-cyclades-from-libsanitizer.patch Sob Upstream
 package/gcc/arc-2020.09-release/0100-uclibc-conf.patch Upstream
 package/gcr/0001-meson-Fix-unknown-kw-argument-in-gnome.generate_gir.patch Upstream
-package/gdal/0001-fix-uclibc-build-without-NPTL.patch Upstream
 package/gdb/12.1/0001-ppc-ptrace-Define-pt_regs-uapi_pt_regs-on-GLIBC-syst.patch Upstream
 package/gdb/12.1/0002-sh-ptrace-Define-pt_-dsp-regs-uapi_pt_-dsp-regs-on-G.patch Upstream
 package/gdb/12.1/0003-use-asm-sgidefs.h.patch Upstream
@@ -491,7 +490,6 @@ package/gerbera/S99gerbera Indent
 package/giblib/0001-fix-imlib2-detection.patch Upstream
 package/giflib/0001-Makefile-add-targets-to-manage-static-building.patch Upstream
 package/git-crypt/0001-fix-build-with-libressl-3.5.0.patch Upstream
-package/gli/0001-Optional-building-tests.patch Upstream
 package/glog/0001-added-emscripten-support.patch Upstream
 package/glorytun/0001-Add-support-for-Apple-silicon.patch Upstream
 package/glorytun/0002-aegis256.c-fix-aarch64-build-with-uclibc.patch Upstream
@@ -527,8 +525,6 @@ package/harfbuzz/0001-meson.build-check-for-pthread.h.patch Upstream
 package/haserl/0001-add-haserl_lualib.inc.patch Upstream
 package/haveged/S21haveged Shellcheck Variables
 package/heirloom-mailx/0001-fix-libressl-support.patch Upstream
-package/highway/0001-Fix-compilation-for-armv7-with-gcc-8.patch Upstream
-package/highway/0002-Fix-compilation-for-armv7-targets-with-vfp-v4-and-gc.patch Upstream
 package/hplip/0001-build-use-pkg-config-to-discover-libusb.patch Upstream
 package/hplip/0002-configure.in-fix-AM_INIT_AUTOMAKE-call.patch Upstream
 package/htpdate/S43htpdate Shellcheck
@@ -568,7 +564,6 @@ package/intel-mediasdk/0001-Don-t-force-fstack-protector.patch Upstream
 package/intltool/0001-perl-5.26-compatibility.patch Upstream
 package/iotop/0001-Fix-build-error-with-Python-3.patch Upstream
 package/iozone/0001-Add-new-targets-for-iozone.patch Upstream
-package/iperf/0001-fix-single-threaded-compile-breakage.patch Upstream
 package/ipmitool/0001-configure.ac-fix-readline-static-build.patch Upstream
 package/ipmitool/0002-Fix-enterprise-numbers-URL.patch Upstream
 package/ipmitool/0003-Do-not-require-the-IANA-PEN-registry-file.patch Upstream
@@ -663,7 +658,6 @@ package/libiio/S99iiod Shellcheck Variables
 package/libiqrf/0001-cmake-handle-static-library-and-find-required-thread.patch Upstream
 package/libiqrf/0002-use-only-c-language.patch Upstream
 package/libjson/0001-fix-broken-makefile.patch Upstream
-package/libjxl/0001-djxl-fix-segmentation-fault-when-JPEG-is-disabled.patch Upstream
 package/libkcapi/0001-lib-kcapi-kernel-if.c-fix-uclibc-build.patch Upstream
 package/libkcapi/0002-Add-disable-werror.patch Upstream
 package/libkcapi/0003-Fix-symver-build-error-on-non-ELF-platforms.patch Upstream
