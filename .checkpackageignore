@@ -202,15 +202,12 @@ package/bind/S81named Indent Shellcheck Variables
 package/binutils/2.39/0001-sh-conf.patch Upstream
 package/binutils/2.39/0002-poison-system-directories.patch Upstream
 package/binutils/2.39/0003-bfd-elf32-or1k-fix-building-with-gcc-version-5.patch Upstream
-package/binutils/arc-2020.09-release/0001-poison-system-directories.patch Upstream
 package/bird/0001-configure.ac-fix-build-with-autoconf-2.70.patch Upstream
 package/bitcoin/0001-src-randomenv.cpp-fix-build-on-uclibc.patch Upstream
 package/bmx7/0001-Fix-schedule.c-378-36-error-SIOCGSTAMP-undeclared.patch Upstream
 package/bmx7/0002-Fix-linking-error.patch Upstream
 package/bmx7/0003-Reorder-includes-to-avoid-ethhdr-collision.patch Upstream
 package/boinc/S99boinc-client Indent Shellcheck Variables
-package/botan/0001-Add-superh-alias-needed-by-Debian.patch Upstream
-package/botan/0002-src-build-data-arch-superh.txt-add-sh4-eb-aeb.patch Upstream
 package/brickd/S70brickd Indent Shellcheck Variables
 package/bridge-utils/0001-fix-build-on-musl.patch Upstream
 package/brltty/0001-Fix-linking-error-on-mips64el.patch Upstream
@@ -274,10 +271,6 @@ package/curlftpfs/0004-fix-musl-build-off-t.patch Upstream
 package/cutelyst/0001-server-CMakeLists.txt-don-t-override-CMAKE_EXE_LINKE.patch Upstream
 package/cwiid/0001-wmdemo-fix-linking-by-adding-the-missing-lbluetooth-.patch Upstream
 package/cwiid/0002-configure-make-wmgui-build-optional.patch Upstream
-package/dahdi-linux/0001-drivers-dahdi-Kbuild-fix-HOTPLUG_FIRMWARE-definition.patch Upstream
-package/dahdi-linux/0002-fix-build-with-32-bits-kernel.patch Upstream
-package/dahdi-linux/0003-Fixed-compilation-issues-on-linux-kernel-5-18-0.patch Upstream
-package/dahdi-linux/0004-next-fix-kernel-6-1-build.patch Upstream
 package/dahdi-tools/0001-no-build-docs.patch Upstream
 package/dahdi-tools/0002-no-perl-manpages.patch Upstream
 package/dante/0001-fix-sparc-compile.patch Upstream
@@ -451,9 +444,6 @@ package/gcc/8.4.0/0001-xtensa-fix-PR-target-91880.patch Upstream
 package/gcc/8.4.0/0002-Revert-re-PR-target-92095-internal-error-with-O1-mcp.patch Upstream
 package/gcc/8.4.0/0003-libsanitizer-Remove-cyclades-from-libsanitizer.patch Upstream
 package/gcc/8.4.0/0004-disable-split-stack-for-non-thread-builds.patch Upstream
-package/gcc/arc-2020.09-release/0001-arc-Refurbish-adc-sbc-patterns.patch Upstream
-package/gcc/arc-2020.09-release/0002-libsanitizer-Remove-cyclades-from-libsanitizer.patch Sob Upstream
-package/gcc/arc-2020.09-release/0100-uclibc-conf.patch Upstream
 package/gcr/0001-meson-Fix-unknown-kw-argument-in-gnome.generate_gir.patch Upstream
 package/gdb/12.1/0001-ppc-ptrace-Define-pt_regs-uapi_pt_regs-on-GLIBC-syst.patch Upstream
 package/gdb/12.1/0002-sh-ptrace-Define-pt_-dsp-regs-uapi_pt_-dsp-regs-on-G.patch Upstream
