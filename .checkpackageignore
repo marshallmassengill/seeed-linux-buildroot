@@ -159,8 +159,6 @@ package/asterisk/0001-sounds-do-not-download-and-check-sha1s.patch Upstream
 package/asterisk/0002-configure-fix-detection-of-libcrypt.patch Upstream
 package/asterisk/0003-build-ensure-target-directory-for-modules-exists.patch Upstream
 package/asterisk/0004-install-samples-need-the-data-files.patch Upstream
-package/asterisk/0005-configure-fix-detection-of-re-entrant-resolver-funct.patch Upstream
-package/asterisk/0006-main-iostream.c-fix-build-with-libressl.patch Upstream
 package/at/0001-Makefile.in-fix-make-install-for-non-root-don-t-stri.patch Upstream
 package/at/S99at Indent Variables
 package/attr/0001-build-with-older-GCCs.patch Upstream
@@ -648,9 +646,6 @@ package/libiio/S99iiod Shellcheck Variables
 package/libiqrf/0001-cmake-handle-static-library-and-find-required-thread.patch Upstream
 package/libiqrf/0002-use-only-c-language.patch Upstream
 package/libjson/0001-fix-broken-makefile.patch Upstream
-package/libkcapi/0001-lib-kcapi-kernel-if.c-fix-uclibc-build.patch Upstream
-package/libkcapi/0002-Add-disable-werror.patch Upstream
-package/libkcapi/0003-Fix-symver-build-error-on-non-ELF-platforms.patch Upstream
 package/libks/0001-CMakeLists.txt-honour-BUILD_TESTING.patch Upstream
 package/liblinear/0001-build-static-lib.patch Upstream
 package/liblockfile/0001-Makefile.in-fix-cross-compilation.patch Upstream
@@ -1470,7 +1465,6 @@ package/ympd/0001-only-c-language.patch Upstream
 package/ympd/0002-added-forward-declarations.patch Upstream
 package/zabbix/0001-m4-netsnmp.m4-fix-shared-netsnmp-build.patch Upstream
 package/zabbix/0002-fix-build-with-libressl-3.5.0.patch Upstream
-package/zbar/0001-python-enum-fix-build-for-Python-3.11.patch Upstream
 package/zic/0001-remove-dependency-check-on-version-file.patch Upstream
 package/zip/0001-configure-Remove-Check-C-compiler-type-optimization-.patch Upstream
 package/zip/0002-configure-Don-t-use-host-CPP.patch Upstream
