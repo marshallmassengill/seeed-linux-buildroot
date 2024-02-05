@@ -227,10 +227,8 @@ package/c-icap/0001-Required-fixes-to-compile-and-run-under-cygwin.patch Upstrea
 package/c-icap/S96cicap Indent Shellcheck Variables
 package/ca-certificates/0001-mozilla-certdata2pem.py-make-cryptography-module-opt.patch Upstream
 package/cache-calibrator/0001-Fix-conflicting-round-function.patch Upstream
-package/cairo/0001-fix-nofork-build.patch Upstream
-package/cairo/0002-ft-Use-FT_Done_MM_Var-instead-of-free-when-available-in-cairo_ft_apply_variation.patch Upstream
-package/cairo/0003-_arc_max_angle_for_tolerance_normalized-fix-infinite.patch Upstream
-package/cairo/0004-Fix-mask-usage-in-image-compositor.patch Upstream
+package/cairo/0001-_arc_max_angle_for_tolerance_normalized-fix-infinite.patch Upstream
+package/cairo/0002-Fix-mask-usage-in-image-compositor.patch Upstream
 package/caps/0001-Fix-stdint-types-with-musl.patch Upstream
 package/cdrkit/0001-no-rcmd.patch Upstream
 package/cdrkit/0002-define-__THROW-to-avoid-build-issue-with-musl.patch Upstream
@@ -594,7 +592,6 @@ package/libatasmart/0001-strpool-cross-flags.patch Upstream
 package/libavl/0001-fix-makefile.patch Upstream
 package/libb64/0001-Integer-overflows.patch Upstream
 package/libb64/0002-Initialize-C++-objects.patch Upstream
-package/libblockdev/0001-Provide-replacement-function-for-strerror_l.patch Upstream
 package/libcdaudio/0001-libcdaudio-enable-autoreconf.patch Upstream
 package/libcec/0001-cecloader-h-fix-null-return.patch Upstream
 package/libcgi/0001-CMakeLists.txt-honour-BUILD_TESTING.patch Upstream
@@ -728,7 +725,6 @@ package/libvpx/0001-vpx_mem-vpx_mem.h-Fix-compilation-with-uClibc.patch Upstream
 package/libwebsock/0001-Switch-to-use-pkg-config-to-detect-libevent-and-open.patch Upstream
 package/libwebsock/0002-fix-ssl.patch Upstream
 package/libwebsock/0003-fix-incorrect-inline.patch Upstream
-package/libwebsockets/0001-lib-tls-CMakeLists.txt-fix-build-without-threads.patch Upstream
 package/libyuv/0001-i386-sse2.patch Upstream
 package/lighttpd/0001-Modify-the-default-lighttpd-configuration-file-to-ha.patch Upstream
 package/lighttpd/S50lighttpd EmptyLastLine Indent Shellcheck Variables
@@ -901,9 +897,6 @@ package/nginx/0008-src-os-unix-ngx_linux_config.h-only-include-dlfcn.h-.patch Up
 package/nginx/0009-auto-os-linux-fix-build-with-libxcrypt.patch Upstream
 package/nginx/0010-Allow-forcing-of-endianness-for-cross-compilation.patch Upstream
 package/nginx/S50nginx Indent Variables
-package/ngrep/0001-Fix-typo-in-configure-in-when-testing-for-use_pcre.patch Upstream
-package/ngrep/0002-Check-for-libnet_init-in-configure-in.patch Upstream
-package/ngrep/0003-fix-disable-tcpkill.patch Upstream
 package/nilfs-utils/0001-nilfs_cleanerd-link-dynamically.patch Upstream
 package/nmap/0001-libdnet-wrapper-configure.patch Upstream
 package/nodejs/nodejs-src/0001-add-qemu-wrapper-support.patch Upstream
@@ -1184,7 +1177,6 @@ package/rtorrent/0001-Added--disable-execinfo-option-to-configure.patch Upstream
 package/rtty/0001-CMakeLists.txt-prefer-pkg_check_modules.patch Upstream
 package/rubix/0001-dont-use-legacy-functions.patch Upstream
 package/rubix/0002-misc-fixes.patch Sob Upstream
-package/ruby/0001-Fix-build-with-LibreSSL-3-5.patch Upstream
 package/rygel/0001-build-Add-man_pages-build-options.patch Upstream
 package/rygel/0002-meson.build-fix-g_ir_compiler-calls.patch Upstream
 package/rygel/S99rygel Indent Shellcheck Variables
@@ -1403,7 +1395,6 @@ package/wilc-driver/0005-Fix-cast-warnings.patch Upstream
 package/wipe/0001-musl.patch Upstream
 package/wireless_tools/0001-remove-bzero.patch Upstream
 package/wireshark/0001-cmake-lemon-wipe-CMAKE_-EXE_LINKER_FLAGS-SYSROOT-if-.patch Upstream
-package/wlroots/0001-Add-feature-macros-to-more-C-files-.patch Upstream
 package/woff2/0001-CMake-Handle-multiple-libraries-being-returned-for-B.patch Upstream
 package/wpa_supplicant/0001-build-re-enable-options-for-libwpa_client.so-and-.patch Upstream
 package/wpa_supplicant/ifupdown.sh Shellcheck
