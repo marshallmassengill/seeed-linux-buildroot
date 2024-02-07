@@ -760,7 +760,7 @@ F:	package/sscep/
 F:	package/uuu/
 
 N:	Dario Binacchi <dariobin@libero.it>
-F:	package/davinci-bootcount/
+F:	package/uboot-bootcount/
 F:	package/libmnl/
 
 N:	David Bachelart <david.bachelart@bbright.com>
@@ -1754,6 +1754,8 @@ F:	package/riscv-isa-sim/
 F:	package/tinycompress/
 F:	package/z3/
 F:	package/zynaddsubfx/
+F:	support/testing/tests/boot/test_optee_os.py
+F:	support/testing/tests/boot/test_optee_os/
 F:	support/testing/tests/package/sample_python_distro.py
 F:	support/testing/tests/package/sample_python_gnupg.py
 F:	support/testing/tests/package/sample_python_hwdata.py
@@ -1887,9 +1889,11 @@ N:	Kieran Bingham <kieran.bingham@ideasonboard.com>
 F:	package/libcamera/
 
 N:	Kilian Zinnecker <kilian.zinnecker@mail.de>
-F:	package/rockchip-rkbin/
-F:	configs/rock5b_defconfig
+F:	board/avnet/rzboard_v2l/
 F:	board/radxa/rock5b/
+F:	configs/rock5b_defconfig
+F:	configs/avnet_rzboard_v2l_defconfig
+F:	package/rockchip-rkbin/
 
 N:	Klaus Heinrich Kiwi <klaus@linux.vnet.ibm.com>
 F:	package/wqy-zenhei/
@@ -2401,6 +2405,9 @@ F:	package/yavta/
 N:	Patrick Havelange <patrick.havelange@essensium.com>
 F:	support/testing/tests/package/test_lxc.py
 F:	support/testing/tests/package/test_lxc/
+
+N:	Patrick Oppenlander <patrick.oppenlander@gmail.com>
+F:	package/minisign/
 
 N:	Paul Cercueil <paul@crapouillou.net>
 F:	package/libiio/
