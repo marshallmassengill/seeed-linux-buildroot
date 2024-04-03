@@ -531,6 +531,9 @@ N:	Bilal Wasim <bilalwasim676@gmail.com>
 F:	board/chromebook/elm/
 F:	configs/chromebook_elm_defconfig
 
+N:	Boerge Struempfel <boerge.struempfel@gmail.com>
+F:	package/libgpiod2/
+
 N:	Bogdan Radulescu <bogdan@nimblex.net>
 F:	package/iftop/
 F:	package/ncdu/
@@ -1679,6 +1682,7 @@ N:	Joshua Henderson <joshua.henderson@microchip.com>
 F:	package/qt5/qt5wayland/
 
 N:	Jugurtha BELKALEM <jugurtha.belkalem@smile.fr>
+F:	package/bcc/
 F:	package/python-aiofiles/
 F:	package/python-crayons/
 F:	package/python-cycler/
@@ -2579,6 +2583,9 @@ F:	package/synergy/
 N:	Prabhu Sannachi <prabhu.sannachi@collins.com>
 F:	package/redis-plus-plus/
 
+N:	Qais Yousef <qais.yousef@arm.com>
+F:	package/bpftrace/
+
 N:	Rafal Susz <rafal.susz@gmail.com>
 F:	board/avnet/s6lx9_microboard/
 F:	configs/s6lx9_microboard_defconfig
@@ -2680,7 +2687,9 @@ F:	configs/qemu_*
 F:	configs/am574x_idk_defconfig
 F:	package/alure/
 F:	package/aubio/
+F:	package/bcc/
 F:	package/binutils/
+F:	package/bpftrace/
 F:	package/bullet/
 F:	package/clinfo/
 F:	package/efl/
