@@ -129,9 +129,6 @@ configs/andes_ae350_45_defconfig lib_defconfig.ForceCheckHash
 configs/arcturus_ucls1012a_defconfig lib_defconfig.ForceCheckHash
 configs/arcturus_ucp1020_defconfig lib_defconfig.ForceCheckHash
 configs/arm_foundationv8_defconfig lib_defconfig.ForceCheckHash
-configs/armadeus_apf27_defconfig lib_defconfig.ForceCheckHash
-configs/armadeus_apf28_defconfig lib_defconfig.ForceCheckHash
-configs/armadeus_apf51_defconfig lib_defconfig.ForceCheckHash
 configs/aspeed_ast2500evb_defconfig lib_defconfig.ForceCheckHash
 configs/aspeed_ast2600evb_defconfig lib_defconfig.ForceCheckHash
 configs/asus_tinker-s_rk3288_defconfig lib_defconfig.ForceCheckHash
@@ -765,7 +762,6 @@ package/gpm/0005-fix-building-w-newer-glibc.patch lib_patch.Upstream
 package/gpm/0006-src-headers-daemon.h-avoid-redefinition-of-last_sele.patch lib_patch.Upstream
 package/gpsd/S50gpsd Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/gptfdisk/0001-gptcurses-partially-revert-Tweaks-for-building-on-th.patch lib_patch.Upstream
-package/gptfdisk/0002-Fix-failure-crash-of-sgdisk-when-compiled-with-lates.patch lib_patch.Upstream
 package/graphite2/0001-don-t-install-a-libtool-file-with-static-library.patch lib_patch.Upstream
 package/grpc/0002-wrap_memcpy.cc-add-GPR_DISABLE_WRAPPED_MEMCPY.patch lib_patch.Upstream
 package/grpc/0003-host-grpc-only-cpp-plugin.patch lib_patch.Upstream
@@ -1360,7 +1356,6 @@ package/python3/0028-fix-building-on-older-distributions.patch lib_patch.Upstrea
 package/python3/0029-configure.ac-fixup-CC-print-multiarch-output-for-mus.patch lib_patch.Upstream
 package/python3/0030-Add-an-option-to-disable-the-berkeleydb-module.patch lib_patch.Upstream
 package/python3/0031-lib-crypt-uClibc-ng-doesn-t-set-errno-when-encryptio.patch lib_patch.Upstream
-package/qemu/0001-tests-fp-disable-fp-bench-build-by-default.patch lib_patch.Upstream
 package/qemu/0002-softmmu-qemu-seccomp.c-add-missing-header-for-CLONE_.patch lib_patch.Upstream
 package/qextserialport/0001-Create-a-main-include-file-QExtSerialPort.patch lib_patch.Upstream
 package/qextserialport/0002-Tell-qmake-to-add-a-pkgconfig-file-to-ease-usage-wit.patch lib_patch.Upstream
@@ -1707,7 +1702,6 @@ package/zip/0006-unix-configure-borrow-the-LFS-test-from-autotools.patch lib_pat
 package/zip/0007-timezone.c-needs-time.h-fixes-musl-compile.patch lib_patch.Upstream
 package/zip/0008-fix-musl-static-build.patch lib_patch.Upstream
 package/zmqpp/0001-Allow-building-shared-or-static-library-only.patch lib_patch.Upstream
-package/zziplib/0001-implant-ZZIP_LIBLATEST-for-zzip_lib.patch lib_patch.Upstream
 support/dependencies/check-host-asciidoc.sh Shellcheck
 support/dependencies/check-host-cmake.sh Shellcheck
 support/dependencies/check-host-gzip.sh Shellcheck
