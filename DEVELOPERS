@@ -547,6 +547,7 @@ F:	package/python-pysensors/
 F:	package/qoriq-fm-ucode/
 F:	package/unifdef/
 F:	package/vmtouch/
+F:	support/testing/tests/package/test_zip.py
 
 N:	Brock Williams <brock@cottonwoodcomputer.com>
 F:	package/pdmenu/
@@ -1141,6 +1142,7 @@ F:	package/libwpe/
 F:	package/linenoise/
 F:	package/ljlinenoise/
 F:	package/lua-inotify/
+F:	package/lmdb/
 F:	package/lpeg/
 F:	package/lpty/
 F:	package/lrandom/
@@ -1648,6 +1650,9 @@ F:	package/sdbusplus/
 N:	Jon Ringle <jringle@gridpoint.com>
 F:	package/mbpoll/
 
+N:	Jon Henrik Bjørnstad <jonhenrik@qbee.io>
+F:	package/qbee-agent/
+
 N:	Jonathan Ben Avraham <yba@tkos.co.il>
 F:	arch/Config.in.xtensa
 F:	package/autofs/
@@ -1751,6 +1756,7 @@ F:	package/gnupg2/
 F:	package/highway/
 F:	package/kexec/
 F:	package/libjxl/
+F:	package/mokutil/
 F:	package/octave/
 F:	package/ola/
 F:	package/openblas/
@@ -1815,6 +1821,8 @@ F:	support/testing/tests/package/test_ghostscript/
 F:	support/testing/tests/package/test_glslsandbox_player.py
 F:	support/testing/tests/package/test_glslsandbox_player/
 F:	support/testing/tests/package/test_gnupg2.py
+F:	support/testing/tests/package/test_gnuplot.py
+F:	support/testing/tests/package/test_gnuplot/
 F:	support/testing/tests/package/test_gnuradio.py
 F:	support/testing/tests/package/test_gnuradio/
 F:	support/testing/tests/package/test_gzip.py
@@ -1914,6 +1922,9 @@ F:	package/easy-rsa/
 
 N:	Justin Maggard <jmaggard@netgear.com>
 F:	package/dtach/
+
+N:	Kadambini Nema <kadambini.nema@gmail.com>
+F:	package/ustreamer/
 
 N:	Kamel Bouhara <kamel.bouhara@gmail.com>
 F:	package/libodb-boost/
@@ -2291,6 +2302,9 @@ F:	package/skeleton-init-openrc/
 N:	Michel Stempin <michel.stempin@wanadoo.fr>
 F:	board/sipeed/licheepi_zero/
 F:	configs/sipeed_licheepi_zero_defconfig
+
+N:	Mika Westerberg <mika.westerberg@linux.intel.com>
+F:	package/tbtools/
 
 N:	Mike Frampton <mikeframpo@gmail.com>
 F:	package/qcom-db410c-firmware/
@@ -3187,6 +3201,8 @@ N:	Wade Berrier <wberrier@gmail.com>
 F:	package/ngrep/
 
 N:	Waldemar Brodkorb <wbx@openadk.org>
+F:	board/qemu/riscv32-virt/
+F:	configs/qemu_riscv32_nommu_virt_defconfig
 F:	package/asterisk/
 F:	package/libjwt/
 F:	package/mksh/
