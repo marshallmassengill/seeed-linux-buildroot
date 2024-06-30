@@ -455,9 +455,6 @@ package/cdrkit/0001-no-rcmd.patch lib_patch.Upstream
 package/cdrkit/0002-define-__THROW-to-avoid-build-issue-with-musl.patch lib_patch.Upstream
 package/cdrkit/0003-Add-extern-to-char-outfile-declaration-to-fix-build-.patch lib_patch.Upstream
 package/cfm/S65cfm lib_sysv.Indent lib_sysv.Variables
-package/cgic/0001-prepare_makefile.patch lib_patch.Upstream
-package/cgic/0002-file_enhancements.patch lib_patch.Upstream
-package/cgic/0003-restore-cgiFormFileGetTempfileName.patch lib_patch.Upstream
 package/cgroupfs-mount/S30cgroupfs Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/chipmunk/0001-Fix-build-failure-on-musl.patch lib_patch.Upstream
 package/chocolate-doom/0001-Remove-redundant-demoextend-definition.patch lib_patch.Upstream
@@ -564,7 +561,7 @@ package/ecryptfs-utils/0003-fix-parallel-build-issue.patch lib_patch.Upstream
 package/efl/0001-ecore_evas-engines-drm-meson.build-use-gl_deps-as-en.patch lib_patch.Upstream
 package/efl/0002-ecore_evas-engines-drm-meson.build-fix-gl_drm-includ.patch lib_patch.Upstream
 package/efl/0003-ecore_fb-fix-build-with-tslib.patch lib_patch.Upstream
-package/eigen/0001-Adds-new-CMake-Options-for-controlling-build-components.patch lib_patch.Upstream
+package/eigen/0001-Adds-new-CMake-Options-for-controlling-build-compone.patch lib_patch.Upstream
 package/ejabberd/0001-Makefile.in-do-not-download-or-compile-dependencies.patch lib_patch.Upstream
 package/ejabberd/0002-fix-ejabberdctl.patch lib_patch.Upstream
 package/ejabberd/0003-correct-includes.patch lib_patch.Upstream
@@ -1097,7 +1094,7 @@ package/nginx/0009-auto-os-linux-fix-build-with-libxcrypt.patch lib_patch.Upstre
 package/nginx/0010-Allow-forcing-of-endianness-for-cross-compilation.patch lib_patch.Upstream
 package/nginx/S50nginx lib_sysv.Indent lib_sysv.Variables
 package/nilfs-utils/0001-nilfs_cleanerd-link-dynamically.patch lib_patch.Upstream
-package/nmap/0001-libdnet-wrapper-configure.patch lib_patch.Upstream
+package/nmap/0001-libdnet-always-build-a-static-library.patch lib_patch.Upstream
 package/nodejs/nodejs-src/0001-add-qemu-wrapper-support.patch lib_patch.Upstream
 package/nodejs/nodejs-src/0002-check-if-uclibc-has-backtrace-support.patch lib_patch.Upstream
 package/nodejs/nodejs-src/0003-include-obj-name-in-shared-intermediate.patch lib_patch.Upstream
@@ -1401,7 +1398,7 @@ package/softether/0008-librt.patch lib_patch.Upstream
 package/softether/0009-uclibc-ai-addrconfig.patch lib_patch.Upstream
 package/solarus/0001-cmake-remove-Werror.patch lib_patch.Upstream
 package/solarus/0002-Add-a-basic-FindOpenGLES2.cmake.patch lib_patch.Sob lib_patch.Upstream
-package/sox/0001-uclibc.patch lib_patch.Upstream
+package/sox/0001-Make-SoX-support-uclibc-based-toolchains.patch lib_patch.Upstream
 package/sox/0002-configure.ac-put-back-disable-stack-protector.patch lib_patch.Upstream
 package/sox/0003-configure.ac-fix-static-linking-with-id3tag.patch lib_patch.Upstream
 package/sox/0004-configure.ac-fix-static-linking-with-magic.patch lib_patch.Upstream
